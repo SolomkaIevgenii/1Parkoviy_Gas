@@ -119,5 +119,17 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         button9.setOnClickListener(clickListener9);
+
+        View buttonGeneralProject = findViewById(R.id.ButtonGeneralProject);
+
+        View.OnClickListener clickListenerButtonGeneralProject = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(v.getContext(), GeneralProjectActivity.class);
+                startActivity(intent);
+            }
+        };
+        buttonGeneralProject.setOnClickListener(clickListenerButtonGeneralProject);
     }
 }

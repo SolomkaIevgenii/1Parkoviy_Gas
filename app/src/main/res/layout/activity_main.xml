@@ -1,143 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:fillViewport="true"
+    android:isScrollContainer="true">
 
-    <ImageView
-        android:id="@+id/imageView"
+
+    <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_gravity="center_horizontal"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Выберите планировку"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher" />
 
-    <ImageButton
-        android:id="@+id/Button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/park_01" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Выберите планировку"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <ImageButton
-        android:id="@+id/Button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toEndOf="@+id/Button8"
-        app:layout_constraintTop_toTopOf="@+id/Button8"
-        app:srcCompat="@drawable/park_02" />
+        <ImageButton
+            android:id="@+id/Button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/park_01" />
 
-    <ImageView
-        android:id="@+id/imageViewStairs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@+id/Button9"
-        app:layout_constraintTop_toTopOf="@+id/Button8"
-        app:srcCompat="@drawable/park_03" />
+        <ImageButton
+            android:id="@+id/Button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/Button8"
+            app:layout_constraintTop_toTopOf="@+id/Button8"
+            app:srcCompat="@drawable/park_02" />
 
-    <ImageButton
-        android:id="@+id/Button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toEndOf="@+id/imageViewStairs"
-        app:layout_constraintTop_toTopOf="@+id/Button8"
-        app:srcCompat="@drawable/park_04" />
+        <ImageView
+            android:id="@+id/imageViewStairs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/Button9"
+            app:layout_constraintTop_toTopOf="@+id/Button8"
+            app:srcCompat="@drawable/park_03" />
 
-    <ImageButton
-        android:id="@+id/Button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toEndOf="@+id/Button1"
-        app:layout_constraintTop_toTopOf="@+id/Button8"
-        app:srcCompat="@drawable/park_05" />
+        <ImageButton
+            android:id="@+id/Button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStairs"
+            app:layout_constraintTop_toTopOf="@+id/Button8"
+            app:srcCompat="@drawable/park_04" />
 
-    <ImageView
-        android:id="@+id/imageViewEmpty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/Button8"
-        app:layout_constraintStart_toEndOf="@+id/imageViewStairs"
-        app:layout_constraintTop_toBottomOf="@+id/Button1"
-        app:srcCompat="@drawable/park_06" />
+        <ImageButton
+            android:id="@+id/Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/Button1"
+            app:layout_constraintTop_toTopOf="@+id/Button8"
+            app:srcCompat="@drawable/park_05" />
 
-    <ImageButton
-        android:id="@+id/Button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:padding="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button8"
-        app:srcCompat="@drawable/park_07" />
+        <ImageView
+            android:id="@+id/imageViewEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/Button8"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStairs"
+            app:layout_constraintTop_toBottomOf="@+id/Button1"
+            app:srcCompat="@drawable/park_06" />
 
-    <ImageButton
-        android:id="@+id/Button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:padding="0dp"
-        app:layout_constraintStart_toEndOf="@+id/Button7"
-        app:layout_constraintTop_toBottomOf="@+id/Button8"
-        app:srcCompat="@drawable/park_08" />
+        <ImageButton
+            android:id="@+id/Button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Button8"
+            app:srcCompat="@drawable/park_07" />
 
-    <ImageButton
-        android:id="@+id/Button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:padding="0dp"
-        app:layout_constraintStart_toEndOf="@+id/Button6"
-        app:layout_constraintTop_toBottomOf="@+id/Button8"
-        app:srcCompat="@drawable/park_09" />
+        <ImageButton
+            android:id="@+id/Button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/Button7"
+            app:layout_constraintTop_toBottomOf="@+id/Button8"
+            app:srcCompat="@drawable/park_08" />
 
-    <ImageButton
-        android:id="@+id/Button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toEndOf="@+id/Button4"
-        app:layout_constraintTop_toBottomOf="@+id/Button8"
-        app:srcCompat="@drawable/park_11" />
+        <ImageButton
+            android:id="@+id/Button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/Button6"
+            app:layout_constraintTop_toBottomOf="@+id/Button8"
+            app:srcCompat="@drawable/park_09" />
 
-    <ImageButton
-        android:id="@+id/Button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toEndOf="@+id/Button5"
-        app:layout_constraintTop_toBottomOf="@+id/Button8"
-        app:srcCompat="@drawable/park_10" />
+        <ImageButton
+            android:id="@+id/Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/Button4"
+            app:layout_constraintTop_toBottomOf="@+id/Button8"
+            app:srcCompat="@drawable/park_11" />
 
-</android.support.constraint.ConstraintLayout>
+        <ImageButton
+            android:id="@+id/Button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/Button5"
+            app:layout_constraintTop_toBottomOf="@+id/Button8"
+            app:srcCompat="@drawable/park_10" />
+
+        <Button
+            android:id="@+id/ButtonGeneralProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Проэкт этажа"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Button7" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

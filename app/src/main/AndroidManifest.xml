@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Gas1_1Activity" />
         <activity android:name=".Gas2Activity" />
-        <activity android:name=".Gas3Activity"></activity>
+        <activity android:name=".Gas3Activity" />
+        <activity android:name=".GeneralProjectActivity"></activity>
     </application>
 
 </manifest>
